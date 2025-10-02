@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>@ishaqmurshad_official • Link Hub</title>
+  <meta name="description" content="Spiritual Guidance • Quran • Peace • Love • Wisdom" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --grad-1:#0d3b2d; --grad-2:#235436;
+      --panel:rgba(22,42,32,.90);
+      --text:#fff; --muted:#deefe6;
+      --btn-bg:#fff; --btn-text:#0b3d2a;
+      --shadow:0 16px 40px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:"Inter",system-ui,Arial;color:var(--text);
+      background:radial-gradient(900px 700px at 20% 0%,rgba(25,84,54,.9),transparent 60%),
+                 radial-gradient(1200px 800px at 90% 0%,rgba(48,84,42,.8),transparent 70%),
+                 linear-gradient(180deg,var(--grad-1) 0%,var(--grad-2) 60%,#3a4528 100%);}
+    .wrap{min-height:100%;display:grid;place-items:center;padding:18px}
+    .panel{width:100%;max-width:760px;background:var(--panel);border-radius:28px;padding:28px;
+           box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.06);text-align:center}
+    .avatar{width:120px;height:120px;border-radius:999px;object-fit:cover;display:block;margin:0 auto 14px;
+            border:4px solid rgba(255,255,255,.8);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    .handle{font-weight:800;font-size:clamp(1.8rem,2.8vw,2.3rem)}
+    .tag{color:#e8fff3;opacity:.95;margin-top:6px;line-height:1.5}
+    .links{display:grid;gap:18px;margin-top:22px;text-align:left}
+    .btn{display:flex;align-items:center;gap:12px;width:100%;background:var(--btn-bg);color:var(--btn-text);
+         padding:16px 18px;border-radius:20px;text-decoration:none;font-weight:700;
+         box-shadow:0 10px 30px rgba(0,0,0,.22);border:1px solid rgba(0,0,0,.06);
+         transition:transform .06s ease,box-shadow .2s ease}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 16px 36px rgba(0,0,0,.28)}
+    .btn .i{font-size:22px}
+    .footer{display:flex;justify-content:center;margin-top:26px;color:#e1efe6}
+    .footer small{opacity:.95}
+    @media (max-width:420px){.panel{padding:22px} .btn{padding:14px 16px} .avatar{width:100px;height:100px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <main class="panel" role="main" aria-labelledby="handle">
+      <img src="avatar.jpg" alt="Profile photo" class="avatar" />
+      <h1 id="handle" class="handle">@ishaqmurshad_official</h1>
+      <p class="tag">Spiritual Guidance • Quran • Peace • Love • Wisdom</p>
+      <nav class="links">
+        <a class="btn" href="https://www.tiktok.com/@ishaqmurshad_official" target="_blank"><span class="i">🎵</span><span>Watch on TikTok</span></a>
+        <a class="btn" href="https://instagram.com/ishaqmurshad_official" target="_blank"><span class="i">📷</span><span>Follow on Instagram</span></a>
+        <a class="btn" href="https://www.youtube.com/@hafeezrehman6793" target="_blank"><span class="i">▶️</span><span>Subscribe on YouTube</span></a>
+        <a class="btn" href="https://wa.me/92300XXXXXXX" target="_blank"><span class="i">💬</span><span>Join WhatsApp Group</span></a>
+        <a class="btn" href="https://t.me/" target="_blank"><span class="i">📣</span><span>Join Telegram Channel</span></a>
+        <a class="btn" href="https://paypal.me/IshaqMurshad" target="_blank"><span class="i">🤝</span><span>Support The Dawah</span></a>
+      </nav>
+      <div class="footer"><small>🌙 Bismillah • © <span id="year"></span> @ishaqmurshad_official</small></div>
+    </main>
+  </div>
+  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
